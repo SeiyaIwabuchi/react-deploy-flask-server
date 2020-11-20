@@ -1,7 +1,7 @@
 from flask import send_from_directory,Flask,session
 import os
 import datetime
-from . import conf
+import conf
 app = Flask(__name__,static_folder="{}/static".format(conf.reactBuildPath))
 app.secret_key = conf.flaskSecret
 
